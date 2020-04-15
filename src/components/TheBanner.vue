@@ -3,10 +3,10 @@
     <div class="container">
       <h2>
         <div class="line">
-          <span class="subline">Creating Unique brands is </span>
+          <span>Creating Unique brands is </span>
         </div>
         <div class="line">
-          <span class="subline">What we do</span>
+          <span>What we do</span>
         </div>
       </h2>
       <div class="btn">
@@ -37,6 +37,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 4em;
 
     h2 {
       font-size: 3rem;

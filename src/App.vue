@@ -23,9 +23,12 @@ export default {
     'Intro--Overlay': IntroOverlay,
   },
   mounted() {
+    // Curb flashing by preventing default visibility
+
+    gsap.to('body', 0, { css: { visibility: 'visible' } });
     const tl = gsap.timeline();
 
-    tl.from('.subline', 1.8, {
+    tl.from('.line span', 1.8, {
       y: 100,
       ease: 'power4.out',
       delay: 1,
@@ -33,7 +36,20 @@ export default {
       stagger: {
         amount: 0.3,
       },
-    });
+    })
+      .to('.overlay__top', 1.6, {
+        height: 0,
+        ease: 'expo.inOut',
+        stagger: 0.4,
+      })
+      .to('.overlay__bottom', 1.6, {
+        width: 0,
+        ease: 'expo.inOut',
+        delay: -0.8,
+        stagger: {
+          amount: 0.4,
+        },
+      });
   },
 };
 </script>
@@ -54,6 +70,8 @@ export default {
     z-index: 8;
 
     .overlay__top {
+      // has roots at the bottom and grows up
+      // the animation creates a wipe-down/peel-from-the-top effect
       position: absolute;
       height: 100%;
       width: 33.333vw;
@@ -95,7 +113,7 @@ export default {
       position: absolute;
       height: 100%;
       width: 33.333vw;
-      background: #333;
+      background: #111;
       bottom: 0;
       right: 66.666%;
 

@@ -33,6 +33,10 @@ body {
   font-family: 'Josefin Sans', 'Segoe UI', 'Roboto', 'Ubuntu', 'Droid Sans';
   width: 100%;
 }
+html,
+body {
+  visibility: hidden;
+}
 img {
   width: 100%;
 }
