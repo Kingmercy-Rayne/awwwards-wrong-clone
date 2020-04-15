@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --primary-color: #1b1b1d;
+  --color-tetradic: #06b7e0;
+  --text-color-primary: #222;
+  --text-color-alt: #f2532b;
+  --text-color-tri: #777;
+  --border-color: #777;
+  --border-color-alt: #f2532b;
+  --button-background-color: #f2532b;
+  --button-background-alt: transparent;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color-primary);
+}
+
+li {
+  list-style-type: none;
+}
+body {
+  color: var(--text-color-primary);
+  font-family: 'Josefin Sans', 'Segoe UI', 'Roboto', 'Ubuntu', 'Droid Sans';
+  width: 100%;
+}
+img {
+  width: 100%;
+}
+button {
+  cursor: pointer;
+}
