@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import { gsap } from 'gsap';
 import TheHeather from './components/TheHeather.vue';
 import TheBanner from './components/TheBanner.vue';
 import TheCases from './components/Cases.vue';
@@ -20,6 +21,19 @@ export default {
     'The--Banner': TheBanner,
     'The--Cases': TheCases,
     'Intro--Overlay': IntroOverlay,
+  },
+  mounted() {
+    const tl = gsap.timeline();
+
+    tl.from('.subline', 1.8, {
+      y: 100,
+      ease: 'power4.out',
+      delay: 1,
+      skewY: 7,
+      stagger: {
+        amount: 0.3,
+      },
+    });
   },
 };
 </script>

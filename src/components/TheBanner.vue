@@ -3,10 +3,10 @@
     <div class="container">
       <h2>
         <div class="line">
-          <span>Creating Unique brands is </span>
+          <span class="subline">Creating Unique brands is </span>
         </div>
         <div class="line">
-          <span>What we do</span>
+          <span class="subline">What we do</span>
         </div>
       </h2>
       <div class="btn">
@@ -28,8 +28,7 @@ export default {
 <style lang="stylus" scoped>
 .main {
   height: 50vh;
-  width: 100vw;
-  padding: 0 8em;
+  padding: 2em 8em 0;
   border: solid thin crimson;
   background-color: #fff;
 
@@ -38,8 +37,6 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    margin-top: 8em; // swappable with main
 
     h2 {
       font-size: 3rem;
@@ -66,7 +63,6 @@ export default {
         height: 56px;
         position: relative;
         overflow: hidden;
-        width: 100%;
 
         // border: solid thin cyan;
         @media screen and (max-width: 800px) {
@@ -78,7 +74,7 @@ export default {
         }
 
         span {
-          width: 100%;
+          position: absolute;
         }
       }
     }
