@@ -35,6 +35,7 @@ body {
 }
 html,
 body {
+  /* Removes visibility to be brought back with JS */
   visibility: hidden;
 }
 img {
