@@ -29,7 +29,6 @@ export default {
 .main {
   height: 50vh;
   padding: 2em 8em 0;
-  border: solid thin crimson;
   background-color: #fff;
 
   .container {

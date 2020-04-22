@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <!-- Intro--overlay is positioned absolute to #app -->
-    <Intro--Overlay />
+    <Intro--Overlay v-if="!animationCompleted" />
     <!-- Banner takes up half the VH -->
     <The--Banner />
     <!-- Cases takes up half the VH -->
@@ -56,7 +56,18 @@ export default {
         stagger: {
           amount: 0.4,
         },
+        onComplete: this.setAnimationComplete,
       });
+  },
+  data() {
+    return {
+      animationCompleted: false,
+    };
+  },
+  methods: {
+    setAnimationComplete() {
+      this.animationCompleted = 1;
+    },
   },
 };
 </script>
