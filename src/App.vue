@@ -3,16 +3,19 @@
     <!-- The-Heather is position fixed -->
     <The--Heather />
     <router-view />
+    <The--Navigation />
   </div>
 </template>
 
 <script>
 import { gsap } from 'gsap';
 import TheHeather from './components/TheHeather.vue';
+import TheNavigation from './components/TheNavigation.vue';
 
 export default {
   components: {
     'The--Heather': TheHeather,
+    'The--Navigation': TheNavigation,
   },
   mounted() {
     // Curb flashing by reenabling visibility that's been defaulted as hidden
