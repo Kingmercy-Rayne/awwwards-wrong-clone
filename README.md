@@ -1,4 +1,7 @@
-# awwwards
+# awwwards rebuild series
+
+Original project https://github.com/wrongakram/ar-episode1
+Original tutorial https://youtu.be/ig7ZPRRqMz0
 
 ## Project setup
 ```
