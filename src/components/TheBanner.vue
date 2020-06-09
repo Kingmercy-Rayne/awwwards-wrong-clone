@@ -1,19 +1,26 @@
 <template>
   <section class="main">
     <div class="container">
-      <h2>
-        <div class="line">
-          <span>Creating Unique brands is </span>
+      <div class="row">
+        <h2>
+          <div class="line">
+            <span>Creating unique brands is </span>
+          </div>
+          <div class="line">
+            <span>what we do.</span>
+          </div>
+        </h2>
+        <div class="btn">
+          <a href="#">
+            More about us
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="feather feather-arrow-right">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
         </div>
-        <div class="line">
-          <span>What we do</span>
-        </div>
-      </h2>
-      <div class="btn">
-        <a href="#">
-          More about us
-          <i class="fa fas fa-arrow-right more__icon"></i>
-        </a>
       </div>
     </div>
   </section>
@@ -28,15 +35,21 @@ export default {
 <style lang="stylus" scoped>
 .main {
   height: 50vh;
-  padding: 2em 8em 0;
   background-color: #fff;
 
   .container {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 4em;
+    max-width: 1560px;
+    margin: 0 auto;
+    height: 100%;
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      padding: 0 32px;
+    }
 
     h2 {
       font-size: 3rem;
@@ -100,26 +113,18 @@ export default {
           font-size: 1.1rem;
         }
 
-        .more__icon {
-          font-size: 1rem;
+        svg {
           margin-left: 16px;
-          border: solid 2px #333;
-          width: 1em;
-          padding: 0.3em 1.2em 0.3em 0.4em;
+          border: 2px solid #000;
+          padding: 12px;
+          height: 52px;
+          width: 52px;
           border-radius: 100px;
           transition: 0.4s ease-in-out;
-
-          @media screen and (max-width: 800px) {
-            padding: 0.1em 0.9em 0.1em 0.1em;
-          }
-
-          @media screen and (max-width: 400px) {
-            padding: 0.05em 0.6em 0.05em 0.05em;
-          }
         }
 
         &:hover {
-          .more__icon {
+          svg {
             background: #333;
             color: #fff;
           }
