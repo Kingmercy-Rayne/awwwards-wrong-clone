@@ -32,7 +32,7 @@ export default {
       delay: 1,
       skewY: 7,
       stagger: {
-        amount: 0.3,
+        amount: 0.25,
       },
     })
       .to('.overlay__top', 1.6, {
@@ -73,6 +73,9 @@ export default {
 </script>
 
 <style lang="stylus">
+.home {
+  z-index: 2;
+}
 .intro-overlay {
   .top {
     height: 50vh;

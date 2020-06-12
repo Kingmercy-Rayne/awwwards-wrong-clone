@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
-    <!-- The-Heather is position fixed -->
-    <The--Heather />
+  <div id='app'>
+    <!-- The-Header is position fixed -->
+    <The--Header />
     <router-view />
     <The--Navigation />
   </div>
@@ -9,12 +9,12 @@
 
 <script>
 import { gsap } from 'gsap';
-import TheHeather from './components/TheHeather.vue';
+import TheHeader from './components/TheHeader.vue';
 import TheNavigation from './components/TheNavigation.vue';
 
 export default {
   components: {
-    'The--Heather': TheHeather,
+    'The--Header': TheHeader,
     'The--Navigation': TheNavigation,
   },
   mounted() {
@@ -25,7 +25,7 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style lang='stylus'>
 @import url('./assets/css/global.css');
 
 #app {

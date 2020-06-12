@@ -66,9 +66,14 @@ nav {
   width: 100%;
   height: 100%;
   z-index: 1;
-  // display:none;
-  overflow: hiden;
+  display: none;
+  overflow: hidden;
   background: var(--yellow);
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
 
   a {
     position: relative;
@@ -94,6 +99,11 @@ nav {
         background: #222;
       }
     }
+  }
+
+  .container {
+    max-width: 1560px;
+    margin: 0 auto;
   }
 
   .nav-columns {
